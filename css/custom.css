@@ -174,6 +174,184 @@ section{
 textarea.form-control {
     height: auto;
 }
+.sub-title{
+  text-align: center;
+}
+.sub-title h2{
+  font-size: 22px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 10px;
+  margin: 20px 0px 30px 0px;
+}
+.channelList{
+  display: table;
+  width: 100%;
+}
+.channelList .channelBox{
+  background: #fff;
+  padding: 20px;
+  border:1px solid #bfbeb7;
+  margin-bottom: 30px;
+}
+.channelList .channelBox h3{
+  font-size: 14px;
+}
+.channelList .channelBox p{
+  font-size: 12px;
+}
+.channelList .channelBox .default-icon{
+  text-align: center;
+}
+.featureList >div {
+  text-align: center;
+}
+.featureList h2{
+  font-size: 18px;
+  font-weight: normal;
+}
+.featureList p{
+  text-align: left;
+}
+.featureList .featurelist{
+  margin-bottom: 30px;
+}
+#featurepage{
+  background: #fff;
+}
+.plansInfo{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.plansInfo ul{
+  padding: 0px;
+  margin: 0px;
+}
+.plansInfo ul li{
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+.plansInfo ul.planBox{
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2.5px 4.33px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2.5px 4.33px 8px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2.5px 4.33px 8px 0px rgba(0, 0, 0, 0.75);
+  -o-box-shadow: 2.5px 4.33px 8px 0px rgba(0, 0, 0, 0.75);
+  display: inline-block;
+  width: 940px;
+  position: relative;
+  height: 415px;
+}
+.plansInfo ul li{
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding-left:12px;
+  padding-right: 12px; 
+  float: left;
+  width: 235px;
+  text-align: center;
+  border-right: 1px solid #e3e3e3;
+}
+.plansInfo ul li.plan{
+  position: absolute;
+}
+.plansInfo ul li.plan:hover, .plansInfo ul li.selected{
+  width: 255px;
+  height: 430px;
+  top:-20px;
+  padding-top: 18px;
+  padding-left: 11px;
+  background: #fff;
+  position: absolute;
+  border:2px solid #199733;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.plansInfo ul li.plan:first-child{
+   left:0px;
+}
+.plansInfo ul li.plan:first-child:hover, .plansInfo ul li.selected:first-child{
+  left:-10px;
+}
+.plansInfo ul li.plan:nth-child(2){
+  left: 235px;
+}
+.plansInfo ul li.plan:nth-child(2) h1{
+  color:#f9c203;
+}
+.plansInfo ul li.plan:nth-child(2):hover, .plansInfo ul li.selected:nth-child(2){
+  left: 225px;
+}
+.plansInfo ul li.plan:nth-child(3){
+  left: 470px;
+}
+.plansInfo ul li.plan:nth-child(3) h1{
+  color:#ed1c32;
+}
+.plansInfo ul li.plan:nth-child(3):hover, .plansInfo ul li.selected:nth-child(3){
+  left: 460px;
+}
+.plansInfo ul li.plan:nth-child(4){
+  left: 705px;
+}
+.plansInfo ul li.plan:nth-child(4) h1{
+  color:#199332;
+}
+.plansInfo ul li.plan:nth-child(4):hover, .plansInfo ul li.selected:nth-child(4){
+  left: 695px;
+}
+.btn-secondray:hover, .plansInfo ul li.plan:hover .btn-secondray, .plansInfo ul li.selected .btn-secondray{
+  background: url(../images/choose-but.png) left bottom no-repeat;
+}
+.plansInfo ul.planBox .price{
+  font-size: 24px;
+  color: #777777;
+}
+.plansInfo ul li ul{
+  margin-top: 30px;
+}
+.plansInfo ul li ul li{
+  padding: 0px;
+  border-top:1px solid #ededed;
+  text-align: center;
+  padding: 8px 0px;
+  width: 100%;
+  margin: 0px;
+  border-right: none;
+}
+.plansInfo ul.planBox h1{
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0px;
+}
+.allplanInfo{
+  margin-bottom: 50px;
+}
+.allplanInfo h2{
+  font-size: 24px;
+}
+.allplanInfo .planBox{
+  background: #fff;
+  display: table;
+  width: 100%;
+  padding: 0px 10px 20px 10px;
+  border-radius: 5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  -0-border-radius:5px;
+  border:1px solid #d9d9d9;
+}
+.allplanInfo .planBox >div h3{
+  font-size: 16px;
+}
+.allplanInfo .planBox >div img{
+  float: left;
+  margin-right: 15px;
+}
 /** footer styles **/
 footer{
   background: #199332;
@@ -248,6 +426,20 @@ footer{
 }
 .btn-signup:hover{
   background: url(../images/signup-but-h.png) left bottom repeat;
+}
+.btn-secondray{
+  padding: 11px 0px 11px 0px;
+  background: url(../images/choose-but.png) left top no-repeat;
+  width: 139px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  height: 40px;
+}
+.btn-secondray:hover{
+  background: url(../images/choose-but.png) left bottom no-repeat;
 }
 /** 
   * responsive styles 
