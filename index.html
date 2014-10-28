@@ -20,9 +20,20 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   <!-- jQuery -->
-   <script src="js/jquery.min.js"></script>
-   <script src="js/modernizr.js"></script>
-  <!-- FlexSlider -->
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <script type="text/javascript" src="js/modernizr.js"></script>
+   <!-- parallax script -->
+   <script type="text/javascript" src="js/parallax/nbw-parallax.js"></script>
+   <script type="text/javascript" src="js/parallax/jquery.localscroll-1.2.7-min.js"></script>
+   <script type="text/javascript" src="js/parallax/jquery.scrollTo.js"></script>
+   <script type="text/javascript" src="js/parallax/jquery.inview.js"></script>
+   <script type="text/javascript">
+    $(document).ready(function(){
+      $('#nav, .logo').localScroll();
+      //alert('hello');
+    })
+  </script> 
+  <!-- FlexSlider --> 
   <script defer src="js/jquery.flexslider.js"></script>
   <script type="text/javascript">
     $(function(){
@@ -37,25 +48,27 @@
       });
     });
   </script>
+
   </head>
   <body>
   <!-- header section -->
   <header>
     <div class="wrapper">
       <!-- logo -->
-      <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+      <div class="logo"><a href="#homepage"><img class="mrb-logo" src="images/mrb-logo.png" alt="" /><img src="images/logo.png" alt="" /></a></div>
       <!-- navigation menu -->
       <nav>
-        <ul>
-          <li><a href="#">Features</a><br/><span>Why you'll love it</span></li>
-          <li><a href="#">Sales Channels</a><br/><span>Your order sources</span></li>
-          <li><a href="#">Pricing</a><br/><span>Starting from Free!</span></li>
-          <li><a href="#">Blog</a><br/><span>Our voice</span></li>
+        <ul id="nav" >
+          <li><a href="#channelpage">Sales Channels</a><br/><span>Your order sources</span></li>
+          <li><a href="#featurepage">Features</a><br/><span>Why you'll love it</span></li>
+          <li><a href="#pricingpage">Pricing</a><br/><span>Starting from Free!</span></li>
+          <li><a href="#blogpage">Blog</a><br/><span>Our voice</span></li>
         </ul>
       </nav>
       <div class="login-but"><button type="button" class="btn-default">Login</button></div>
     </div>
   </header>
+  <div class="page">
   <!-- header section end -->
   <!-- home page -->
   <section id="homepage">
@@ -112,8 +125,9 @@
     <div class="contentSec">
     <div class="wrapper">
     <h1>Verify<span class="red-color">Ease Sales</span> Channel Integrations<br/><span class="smallTitle">Order and Inventory Management designed to ease your sales.</span></h1>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <p>VerifyEase – as the name implies, it makes life simpler by removing complications and reducing costs. VerifyEase enables the principal (outsourcer) to focus more on customer engagement rather than bothering about vendor-level operational obstacles. VerifyEase is a lightweight and easy to use application that brings down the operational complexities in your verification tasks.</p>
+    <p>Verification as an activity entails a lot of resources – people, time, money, equipment like printers & scanners, consumables like paper, printer cartridges, etc. People should exhibit a higher level of coordination with constant manual communication to complete the task. It involves generating countless printed forms, capturing the customer data, scanning each of those filled-in forms to enable their digitization, and of course, the cross verification. All these time-consuming processes lead to inefficiencies, time delays for the vendor and increased costs and reduced transparency for the principal.</p>
+    <p>Out goes this cumbersome process and in comes VerifyEase. A simple, easy to use application (that is also mobile-friendly) removes these inefficiencies and time delays at the ground level, while empowering the principal with transparency and cost reductions.</p>
     </div>
     </div>
   </section>
@@ -189,12 +203,12 @@
     </div>
    <div class="wrapper">
       <div class="sub-title">
-        <h2>Speed up your process</h2>
+        <h2><span class="number">1</span>Speed up your process</h2>
       </div>
       <div class="featureList">
         <div class="row">
           <div class="col-md-4 featurelist">
-            <h2>All your orders in one place</h2>
+            <h2>Mobile Friendly</h2>
             <img src="images/chennel-default-icon.png" alt="" alt="" />
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
           </div>
@@ -211,7 +225,7 @@
         </div>
       </div>
       <div class="sub-title">
-        <h2>Reduce mistakes</h2>
+        <h2><span class="number">2</span>Reduce mistakes</h2>
       </div>
       <div class="featureList">
         <div class="row">
@@ -233,7 +247,7 @@
         </div>
       </div>
       <div class="sub-title">
-        <h2>Be more professional</h2>
+        <h2><span class="number">3</span>Be more professional</h2>
       </div>
       <div class="featureList">
         <div class="row">
@@ -341,6 +355,40 @@
     </div>   
   </section>
   <!-- pricing section page end -->
+  <!-- blog page -->
+  <section id="blogpage">
+  <div class="content-header">
+      <div class="wrapper">
+        <h1>VerifyEase Blog</h1>
+        <p>Multi-channel Order and Inventory Management for India</p>
+      </div>
+    </div>
+    <div class="wrapper">
+    <div class="blogpage">
+      <div class="sub-title">
+        <h2>VerifyEase Blog</h2>
+      </div>
+      <div class="blogArticle">
+        <h2>5 Must Read Books for Entrepreneurs</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+      <div class="blogArticle">
+        <h2>5 Must Read Books for Entrepreneurs</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+      <div class="blogArticle">
+        <h2>5 Must Read Books for Entrepreneurs</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+      <div class="blogArticle">
+        <h2>5 Must Read Books for Entrepreneurs</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- blog page end -->
+  </div>
   <!-- footer section -->
   <footer>
     <div class="topFooter">
